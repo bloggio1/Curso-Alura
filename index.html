@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "es">
+<head>
+     <meta charset = "UTF-8">
+     <link rel="stylesheet" type="text/css" href="css/styles.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Encriptar - Desencriptar</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Imagen con mensaje">
+    </header>
+    <main>
+        <div class="left">
+        <div class="espacio-text">
+        <textarea type="text" name="texto" id="texto" class="texto" placeholder="Ingresa el texto aquí." required></textarea>
+            <div style="padding: 0px 10px;gap: 2px;color: #495057;">
+                <svg width="17px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd"
+                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z"
+                        clip-rule="evenodd" />
+                </svg>Solo letras minúsculas y sin acentos
+            </div>
+            <div class="botones">
+            <button type="button" class="enc" onclick="encriptar()">Encriptar</button>
+            <button type="button" class="des" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+</div>
+        <div class="right">
+        <div id="resultado">
+            <h2>Resultado</h2>
+            <div id="resultado2">
+            <img src="muñeco.png" alt="Imagen con mensaje">
+            <p>Ningún mensaje fue encontrado</p>
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <button class="cop" id="copiardiv" onclick="copiarResultado()">Copiar</button>
+            <div id="confirmar"></div>
+        </div>
+        </div>
+        </main>
+        
+    <footer>
+        &copy; Desarrollado por Oscar Gomez - Estudiante de alura one. <a href="#">Likedin - github</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
